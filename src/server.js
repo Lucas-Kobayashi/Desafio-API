@@ -2,12 +2,12 @@ const express = require("express");
 const cors = require('cors')
 
 const db = require("./database")
-const routes = requier("./routes")
+const routes = require("./routes")
 
 const app = express()
 
 // Conexão com o banco
-db.conenct();
+db.connect();
 
 const allowedOrigins = [
     'http://127.0.0.1:5500'
