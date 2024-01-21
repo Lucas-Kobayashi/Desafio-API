@@ -1,4 +1,4 @@
-const {default: mongoose} = require('mongoose')
+const {mongoose} = require('mongoose')
 
 const schema = new mongoose.Schema({
     name: String,
@@ -7,6 +7,6 @@ const schema = new mongoose.Schema({
     address: String
 })
 
-const Model = mongoose.model('products', schema)
+const Model = mongoose.model('customer', schema)
 
 module.exports = Model
