@@ -9,4 +9,9 @@ const schema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'customers'
         }],
-    })
+    }
+)
+
+const Model = mongoose.model('order', schema)
+
+module.exports = Model
