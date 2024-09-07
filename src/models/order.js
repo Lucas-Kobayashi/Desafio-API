@@ -6,9 +6,13 @@ const schema = new mongoose.Schema({
            ref: 'products'
         }],
     customerId: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'customers'
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'customers'
         }],
+    Status: {
+            type: String,
+            default: "Pendente"
+        }
     }
 )
 
