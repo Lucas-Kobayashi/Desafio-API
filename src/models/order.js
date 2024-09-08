@@ -1,13 +1,15 @@
 const { default: mongoose } = require("mongoose");
 
 const schema = new mongoose.Schema({
-    productId: [{
+    product: [{
            type: mongoose.Schema.Types.ObjectId,
-           ref: 'products'
+           ref: 'products',
+           required: true
         }],
-    customerId: [{
+    customer: [{
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'customers'
+            ref: 'customers',
+            required: true
         }],
     Status: {
             type: String,

@@ -13,6 +13,7 @@ router.post('/products', productController.post)
 router.delete('/products/:id', productController.remove)
 
 router.get('/order', orderController.get)
+router.post('/order/:customer_id/:products_id', orderController.post)
 
 
 
